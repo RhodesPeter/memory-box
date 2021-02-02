@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'galano';
+    src: url('galano-grotesque-medium.otf');
+}
+
+body {
+    background-color: #F6F3ED;
+    font-family: galano;
+}
+
+.homepage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.homepage__title {
+    color: #FFC305;
+    font-weight: normal;
+    font-size: 40px;
+    margin-top: 16px;
+}
