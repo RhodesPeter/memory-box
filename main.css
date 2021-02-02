@@ -12,7 +12,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    margin-top: 120px;
 }
 
 .homepage__title {
@@ -20,4 +20,19 @@ body {
     font-weight: normal;
     font-size: 40px;
     margin-top: 16px;
+}
+
+.homepage__logo {
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 600px) {
+    .homepage {
+        margin-top: 150px;
+    }
+
+    .homepage__logo {
+        width: 100%;
+    }
 }
