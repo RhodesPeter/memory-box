@@ -6,33 +6,140 @@
 body {
     background-color: #F6F3ED;
     font-family: galano;
+    padding: 24px 5%;
 }
 
-.homepage {
+.homepage,
+.login {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 120px;
+    flex-direction: column;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
-.homepage__title {
+.login {
+    margin-top: 60px;
+}
+
+.login__img-wrapper {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.login__title {
     color: #FFC305;
     font-weight: normal;
     font-size: 40px;
     margin-top: 16px;
+    text-align: center;
 }
 
-.homepage__logo {
+.login__logo {
     width: 80%;
     margin: 0 auto;
 }
 
+.login__input {
+    padding: 6px;
+    flex: 1;
+}
+
+.login__btn {
+    background-color: blue;
+    color: white;
+    border-radius: 24px;
+    padding: 8px 16px;
+    border: 0;
+    margin-left: 8px;
+}
+
+.login__form {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header__logo {
+    width: 50px;
+    margin-right: 16px;
+}
+
+.header__text {
+    color: #FFC305;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.header__link {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+
+.header__home-link {
+    text-decoration: none;
+    display: flex;
+}
+
+.homepage__main,
+.play__main {
+    width: 100%;
+    padding-top: 24px;
+}
+
+.play__main {
+    display: flex;
+    justify-content: center;
+}
+
+.play-controls:focus {
+    outline: none;
+}
+
+.homepage__audio-link {
+    list-style: none;
+}
+
+.homepage__list {
+    padding: 0;
+}
+
+.homepage__title {
+    font-size: 24px;
+}
+
 @media only screen and (min-width: 600px) {
-    .homepage {
-        margin-top: 150px;
+    .login {
+        margin-top: 80px;
     }
 
-    .homepage__logo {
+    .login__logo {
         width: 100%;
+    }
+
+    .login__input {
+        padding: 6px;
+    }
+
+    .login__form {
+        width: 350px;
+    }
+
+    .header__logo {
+        width: 100px;
+        margin-right: 24px;
+    }
+
+    .header__text {
+        font-size: 32px;
+        line-height: 32px;
     }
 }
