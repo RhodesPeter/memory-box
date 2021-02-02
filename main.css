@@ -95,9 +95,11 @@ body {
     padding-top: 24px;
 }
 
-.play__main {
+.play__main,
+.record__main {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .play-controls:focus {
@@ -114,6 +116,42 @@ body {
 
 .homepage__title {
     font-size: 24px;
+}
+
+.record__list {
+    background-color: #34C9A6;
+    padding: 24px;
+    border-radius: 16px;
+    width: 100%;
+    margin-top: 32px;
+    margin-bottom: 24px;
+}
+
+.record__title {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.record__checkbox-grouping {
+    margin-bottom: 24px
+}
+
+.record__checkbox-grouping:last-of-type {
+    margin-bottom: 0;
+}
+
+.record__label {
+    width: 80%;
+}
+
+.record__checkbox-grouping {
+    display: flex;
+    justify-content: space-between;
+}
+
+.record__checkbox {
+    width: 32px;
+    height: 32px;
 }
 
 @media only screen and (min-width: 600px) {
@@ -141,5 +179,12 @@ body {
     .header__text {
         font-size: 32px;
         line-height: 32px;
+    }
+
+    .record__list {
+        width: 400px;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-right: 48px;
     }
 }

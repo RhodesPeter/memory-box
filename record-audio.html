@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory box</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+    <div class="homepage">
+        <header class="header">
+            <div>
+                <a class="header__home-link" href="index.html">
+                    <img class="header__logo" src="logo.svg" alt="Memory Box logo">
+                    <div>
+                        <p class="header__text">Memory Box</p>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a class="header__link" href="login.html">Login</a>
+            </div>
+        </header>
+        <div class="record__main">
+            <div class="record__list">
+                <p class="record__title">Prompts</p>
+
+                <div class="record__checkbox-grouping">
+                    <label class="record__label" for="one">What is your full name and why were you named that? Did you have a nickname growing up?</label>
+                    <input class="record__checkbox" type="checkbox" id="one">
+                </div>
+
+                <div class="record__checkbox-grouping">
+                    <label class="record__label" for="two">How many children were in your family? What are there full names?</label>
+                    <input class="record__checkbox" type="checkbox" id="two">
+                </div>
+
+                <div class="record__checkbox-grouping">
+                    <label class="record__label" for="three">Who was your best friend as a child?</label>
+                    <input class="record__checkbox" type="checkbox" id="three">
+                </div>
+
+                <div class="record__checkbox-grouping">
+                    <label class="record__label" for="four">What was your first job? How much money did you make?</label>
+                    <input class="record__checkbox" type="checkbox" id="four">
+                </div>
+
+                <div class="record__checkbox-grouping">
+                    <label class="record__label" for="five">Who were your grandparents?</label>
+                    <input class="record__checkbox" type="checkbox" id="five">
+                </div>
+
+                <div class="record__checkbox-grouping">
+                    <label class="record__label" for="six">How many children were in your family? What are there full names?</label>
+                    <input class="record__checkbox" type="checkbox" id="six">
+                </div>
+            </div>
+            <audio controls class="play-controls">
+                <source src="audio-files/example-audio.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
