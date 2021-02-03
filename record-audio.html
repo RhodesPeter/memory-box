@@ -12,7 +12,7 @@
         <header class="header">
             <div>
                 <a class="header__home-link" href="index.html">
-                    <img class="header__logo" src="logo.svg" alt="Memory Box logo">
+                    <img class="header__logo" src="assets/logo.svg" alt="Memory Box logo">
                     <div>
                         <p class="header__text">Memory Box</p>
                     </div>
@@ -57,9 +57,11 @@
                 </div>
             </div>
             <div class="record__capture">
-                <button id="start">Start recording</button>
-                <button id="stop">Stop</button>
-                <a id="download">Download audio</a>
+                <div class="record__sound-btns">
+                    <button class="record__start">Start recording</button>
+                    <button class="record__stop invisible">Stop</button>
+                </div>
+                <a class="record__download invisible">Download audio</a>
                 <!-- <audio controls class="play-controls">
                     <source class="play-controls__source" src="" type="audio/wav">
                     Your browser does not support the audio element.

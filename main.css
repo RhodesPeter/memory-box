@@ -3,6 +3,11 @@
     src: url('galano-grotesque-medium.otf');
 }
 
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
 body {
     background-color: #F6F3ED;
     font-family: galano;
@@ -102,6 +107,10 @@ body {
     flex-wrap: wrap;
 }
 
+.record__main {
+    margin-top: 24px;
+}
+
 .play-controls:focus {
     outline: none;
 }
@@ -154,6 +163,95 @@ body {
     height: 32px;
 }
 
+.record__start {
+    background: white url('assets/microphone.svg') no-repeat center 16px/28px;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    border: 0;
+    padding-top: 24px;
+    line-height: 16px;
+    cursor: pointer;
+    border: 3px solid red;
+    position: relative;
+}
+
+.record__start--recording {
+    pointer-events: none;
+}
+
+.record__start--recording:after {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    content: '';
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #34C9A6;
+    animation: spin 2s linear infinite;
+    border-radius: 50%;
+}
+
+.record__start:focus {
+    outline: none;
+}
+
+.record__start:hover,
+.record__stop:hover {
+    border-color: brown;
+}
+
+.record__start:active,
+.record__stop:active {
+    transform: translateY(3px);
+}
+
+.record__stop {
+    margin-left: 16px;
+    border-color: red;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    border-width: 3px;
+    outline: none;
+    transition: opacity 0.8s;
+    border-style: solid;
+    background-color: white;
+}
+
+.record__download {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 8px 16px;
+    background-color:#34C9A6;
+    border-radius: 8px;
+    margin-top: 18px;
+    transition: opacity 0.8s;
+}
+
+.record__capture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.record__sound-btns {
+    display: flex;
+    align-items: flex-end;
+}
+
+.hidden {
+    display: none;
+}
+
+.invisible {
+    opacity: 0;
+}
+
 @media only screen and (min-width: 600px) {
     .login {
         margin-top: 80px;
@@ -186,5 +284,9 @@ body {
         margin-top: 0;
         margin-bottom: 0;
         margin-right: 48px;
+    }
+
+    .record__capture {
+        width: 300px;
     }
 }
