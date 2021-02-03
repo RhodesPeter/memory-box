@@ -67,13 +67,27 @@ body {
 .header__text {
     color: #FFC305;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 18px;
+    line-height: 24px;
 }
 
 .header__link {
     text-decoration: none;
     color: black;
-    font-size: 24px;
+    font-size: 16px;
+}
+
+.header__link:first-child {
+    margin-right: 8px;
+}
+
+.header__link:last-of-type {
+    margin-left: 8px;
+}
+
+.header__spacer {
+    border-right: 2px solid black;
+    vertical-align: text-bottom;
 }
 
 .header__home-link {
@@ -82,19 +96,22 @@ body {
 }
 
 .homepage__main,
-.play__main {
+.play__main,
+.about__main {
     width: 100%;
     padding-top: 24px;
 }
 
 .play__main,
-.record__main {
+.record__main,
+.about__main {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.record__main {
+.record__main,
+.about__main {
     margin-top: 24px;
 }
 
@@ -252,6 +269,12 @@ body {
     align-items: flex-end;
 }
 
+.about__header {
+    max-width: 550px;
+    font-size: 32px;
+    text-align: center;
+}
+
 .hidden {
     display: none;
 }
@@ -297,5 +320,17 @@ body {
     .homepage__main,
     .play__main {
         padding-top: 80px;
+    }
+
+    .header__link {
+        font-size: 24px;
+    }
+
+    .header__link:first-child {
+        margin-right: 16px;
+    }
+    
+    .header__link:last-of-type {
+        margin-left: 16px;
     }
 }
