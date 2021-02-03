@@ -25,25 +25,7 @@ body {
 }
 
 .login {
-    margin-top: 60px;
-}
-
-.login__img-wrapper {
-    width: 300px;
-    margin: 0 auto;
-}
-
-.login__title {
-    color: #FFC305;
-    font-weight: normal;
-    font-size: 40px;
-    margin-top: 16px;
-    text-align: center;
-}
-
-.login__logo {
-    width: 80%;
-    margin: 0 auto;
+    margin-top: 40px;
 }
 
 .login__input {
@@ -52,7 +34,7 @@ body {
 }
 
 .login__btn {
-    background-color: blue;
+    background-color: #34C9A6;
     color: white;
     border-radius: 24px;
     padding: 8px 16px;
@@ -64,6 +46,11 @@ body {
     margin-top: 40px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+}
+
+.login__form-label {
+    margin-bottom: 8px;
 }
 
 .header {
@@ -111,12 +98,33 @@ body {
     margin-top: 24px;
 }
 
+.play-controls {
+    border: 2px solid #34C9A6;
+    border-radius: 32px;
+}
+
 .play-controls:focus {
     outline: none;
 }
 
+.play__playback {
+    display: flex;
+    flex-direction: column;
+}
+
+.play__playback-title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 8px;
+    align-self: center;
+}
+
 .homepage__audio-link {
     list-style: none;
+}
+
+.homepage__audio-link a {
+    color:#34C9A6;
 }
 
 .homepage__list {
@@ -132,7 +140,7 @@ body {
     padding: 24px;
     border-radius: 16px;
     width: 100%;
-    margin-top: 32px;
+    margin-top: 0;
     margin-bottom: 24px;
 }
 
@@ -257,10 +265,6 @@ body {
         margin-top: 80px;
     }
 
-    .login__logo {
-        width: 100%;
-    }
-
     .login__input {
         padding: 6px;
     }
@@ -270,8 +274,8 @@ body {
     }
 
     .header__logo {
-        width: 100px;
-        margin-right: 24px;
+        width: 40px;
+        margin-right: 16px;
     }
 
     .header__text {
@@ -288,5 +292,10 @@ body {
 
     .record__capture {
         width: 300px;
+    }
+
+    .homepage__main,
+    .play__main {
+        padding-top: 80px;
     }
 }

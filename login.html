@@ -8,14 +8,26 @@
     <link rel="stylesheet" href="reset.css">
 </head>
 <body>
-    <div class="login">
-        <div class="login__img-wrapper">
-            <img class="login__logo" src="assets/logo.svg" alt="Memory Box logo">
-            <h1 class="login__title">Memory Box</h1>
+    <header class="header">
+        <div>
+            <a class="header__home-link" href="index.html">
+                <img class="header__logo" src="assets/logo.svg" alt="Memory Box logo">
+                <div>
+                    <p class="header__text">Memory Box</p>
+                </div>
+            </a>
         </div>
+        <div>
+            <a class="header__link" href="login.html">Login</a>
+        </div>
+    </header>
+    <div class="login">
         <form class="login__form" action="record-audio.html">
-            <input class="login__input" type="text" placeholder="username">
-            <button class="login__btn" type="submit">Log in</button>
+            <label class="login__form-label" for="login-input">Sign in to Memory Box</label>
+            <div>
+                <input class="login__input" id="login-input" type="text" placeholder="username">
+                <button class="login__btn" type="submit">Log in</button>
+            </div>
         </form>
     </div>
     

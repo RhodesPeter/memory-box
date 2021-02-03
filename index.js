@@ -4,14 +4,17 @@ const downloadLink = document.querySelector('.record__download');
 const stopButton = document.querySelector('.record__stop');
 const startButton = document.querySelector('.record__start');
 
-stopButton.addEventListener('click', function() {
-    shouldStop = true;
-});
 
-startButton.addEventListener('click', function() {
-    navigator.mediaDevices.getUserMedia({ audio: true, video: false })
-    .then(handleSuccess);
-});
+if (startButton) {
+  stopButton.addEventListener('click', function() {
+      shouldStop = true;
+  });
+  
+  startButton.addEventListener('click', function() {
+      navigator.mediaDevices.getUserMedia({ audio: true, video: false })
+      .then(handleSuccess);
+  });
+}
 
 const handleSuccess = function(stream) {
     const options = {mimeType: 'audio/webm'};
